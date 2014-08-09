@@ -39,7 +39,7 @@
     NSData *jsonResults = [NSData dataWithContentsOfURL:url];
     
     NSDictionary *propertyListResults = [NSJSONSerialization JSONObjectWithData:jsonResults options:0 error:NULL];
-    NSLog(@"Flickr Results = %@", propertyListResults);
+    //NSLog(@"Flickr Results = %@", propertyListResults);
     NSArray *photos = [propertyListResults valueForKeyPath:FLICKR_RESULTS_PHOTOS];
     self.photos = photos;
 }
